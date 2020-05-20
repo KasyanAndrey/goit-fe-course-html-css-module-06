@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-size: cover;
+  }
+  
+  ul, li {
+    list-style: none;
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  h2, p {
+    text-transform: uppercase;
+  }
+
+  .visually-hidden {   
+    position: absolute;    
+    white-space: nowrap;    
+    width: 1px;
+    height: 1px;   
+    overflow: hidden;    
+    border: 0;
+    padding: 0;    
+    clip: rect(0 0 0 0);   
+    clip-path: inset(50%);    
+    margin: -1px;
+  }
+  /*--------------------header-------------------------*/
+
+  .container-header {
+    margin: 0px auto;
+    max-width: 1200px;
+    background-color: #ffffff;
+    display: block;
+  }
+/*----------------------------nav---------------------*/
+  .page-navigation {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+  }
+  /*--------------------------logo------------------*/  
+  .logotype-link {
+      text-transform: none;
+      text-decoration: none;
+      font-size: 30px;
+      font-weight: bold;
+      color: rgb( 149, 225, 211 );
+  }
+  /*------------------------------nav-ul----------------*/
+  .navigation {
+      width: 490px;     
+  }
+
+  .navigation-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+   /*--------------------------nav-li------------------*/
+   
+  .navigation-list-item-link {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb( 149, 225, 211 );    
+    position: relative;
+  }
+
+  .navigation-list-item-link:hover {
+    color: rgb( 243, 129, 129 );
+  }
+  
+  .navigation-list-item-link:hover::after {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    
+  }
+
+
+  .navigation-list-item-link::after {
+    content: "";
+    display: block;
+    background-color: rgb( 243, 129, 129 );
+    width: 0%;
+    height: 3px;
+    margin-top: 12px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.2s linear;
+    opacity: 0;
+    visibility: hidden;
+    
+  }
+
+
