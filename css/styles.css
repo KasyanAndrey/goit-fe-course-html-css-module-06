@@ -125,14 +125,9 @@
 
 .container-main {
   margin: 0px auto;
-    max-width: 1200px;
-    background-color: #ffffff;
-    display: block;
-}
-
-.service {
-  
-  /*background-position: center;*/
+  max-width: 1200px;
+  background-color: #ffffff;
+  display: block;
 }
 
 .service-title{
@@ -260,111 +255,127 @@
 
 .title-team-text {
 text-align: center;
-padding-bottom: 84px;
+ padding-bottom: 84px;
 }
+
 /*------------------------our-team-card-------------div------*/
 
-.our-team-card {
-
-}
 /*--------------ul---------------------*/
 .our-team-card-list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  
-
+  text-align: center;
 }
 
 /*-------------------li--------------------*/
 .our-team-card-list-items {
   width: 380px;
   position: relative;
-  
 }
 
 /*----------------img-----------------------------*/
-.our-team-card-list-items-photo {
-  
- 
+
+.our-team-card-list-items-photo:hover{
+  transition: transform 0.2s linear, box-shadow 0.2s linear;
 }
-
-
 
 /*--------------div-overlay--------------------*/
 .overlay {
   position: absolute;
+  display: flex;
   top: 0;
-  left: 0;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
   width: 380px;
   height: 472px;
-  background: linear-gradient(0deg, rgb(252, 227, 138), rgb(243, 129, 129)); 
+  background-image: linear-gradient( 180deg, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9) );
   opacity: 0;
-  
+  transition: transform 0.2s linear, box-shadow 0.2s linear;
 }
  
-
 .our-team-card-list-items:hover .overlay {
   opacity: 0.9;
-  
+  transform: translate(-10px, -10px);
+  box-shadow: 10px 10px 0px #95e1d3;
+
 }
-
-
-
-
-
-
 
 /*----------ul--------social-list------------------*/
 .social-list {
-  display: flex;
+  display: flex;  
 }
 
 /*------------li---------social-list-item-------------*/
+.social-list-item-link-facebook {  
+  width: 56px;
+  height: 56px;   
+  background-color: rgb( 252, 227, 138 );
+  border-right: 1px solid  rgba(243, 129, 129, 0.9);
+  background-image: url(../icon/facebook.png);
+  background-position: center;
+}
 
+.social-list-item-link-facebook:hover {
+  background-color:rgb( 149, 225, 211 )
+}
 
-/*--------------a-----------social-list-item-link-----------*/
-.social-list-item-link {
-  display: block;
-  width: ;
-  height: ;
-  background-repeat: no-repeat;
+.social-list-item-link-twitter {  
+  width: 56px;
+  height: 56px;   
+  background-color: rgb( 252, 227, 138 );
+  border-right: 1px solid  rgba(243, 129, 129, 0.9);
+  background-image: url(../icon/twitter.png);
+  background-position: center;
+}
+
+.social-list-item-link-twitter:hover {
+  background-color:rgb( 149, 225, 211 )
+}
+
+.social-list-item-link-pinterest {  
+  width: 56px;
+  height: 56px;   
+  background-color: rgb( 252, 227, 138 );
+  border-right: 1px solid  rgba(243, 129, 129, 0.9);
+  background-image: url(../icon/pinterest.png);
+  background-position: center;
+}
+
+.social-list-item-link-pinterest:hover {
+  background-color:rgb( 149, 225, 211 )
+}
+
+.social-list-item-link-instagram {  
+  width: 56px;
+  height: 56px;   
+  background-color: rgb( 252, 227, 138 );
+  border-right: 1px solid  rgba(243, 129, 129, 0.9);
+  background-image: url(../icon/instagram.png);
+  background-position: center;
+}
+
+.social-list-item-link-instagram:hover {
+  background-color:rgb( 149, 225, 211 )
+}
+
+.our-team-card-list-items-photo-name-personality {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #999999;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+.our-team-card-list-items-photo-name-personality {
+  font-size: 15px;
+  font-weight: 400;
+  color: #333333;
+  margin-top: 15px;
  }
-/*-------a--------------hover-----------------*/
-.social-list-item-link:hover{
-background-color: lightcoral;
-color: #f38181;
-position: absolute;
-top: 0;
-left: 0;
-visibility: hidden;
-opacity: 0;
-  
-}
-/*-------------------icon--------------------------*/
-.social-list-item-link-facebook {
-background-image: url(./icon/facebook.png);
-}
-
-
-.social-list-item-link-twitter {
-background-image: url();
-}
-
-
-.social-list-item-link-pinterest {
-background-image: url();
-}
-
-
-.social-list-item-link-instagram {
-background-image: url();
-}
-
-/*----------------------------------------------------*/
-
-*/
 
 
 
