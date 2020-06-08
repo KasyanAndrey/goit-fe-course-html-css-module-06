@@ -281,63 +281,42 @@ p {
 }
 
 .social-list {
-  display: flex;  
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;  
 }
 
-.social-list-item-link-facebook {  
+.social-list-item {  
   width: 56px;
   height: 56px;   
-  background-color: rgb( 252, 227, 138 );
-  border-right: 1px solid  rgba(243, 129, 129, 0.9);
+  background-color: rgb( 252, 227, 138);
+  border-right: 1px solid  rgba(243, 129, 129, 0.9); 
+  background-position: center;
+  cursor: pointer;
+}
+
+.social-list-item:nth-child(4n) {
+  border-right: none
+}
+
+.social-list-item:hover {
+  background-color:rgb( 149, 225, 211)
+}
+
+.item-facebook {
   background-image: url(../img/icon/facebook.png);
-  background-position: center;
-  cursor: pointer;
 }
 
-.social-list-item-link-facebook:hover {
-  background-color:rgb( 149, 225, 211 )
-}
-
-.social-list-item-link-twitter {  
-  width: 56px;
-  height: 56px;   
-  background-color: rgb( 252, 227, 138 );
-  border-right: 1px solid  rgba(243, 129, 129, 0.9);
+.item-twitter{
   background-image: url(../img/icon/twitter.png);
-  background-position: center;
-  cursor: pointer;
 }
 
-.social-list-item-link-twitter:hover {
-  background-color:rgb( 149, 225, 211 )
-}
-
-.social-list-item-link-pinterest {  
-  width: 56px;
-  height: 56px;   
-  background-color: rgb( 252, 227, 138 );
-  border-right: 1px solid  rgba(243, 129, 129, 0.9);
+.item-pinterest {
   background-image: url(../img/icon/pinterest.png);
-  background-position: center;
-  cursor: pointer;
 }
 
-.social-list-item-link-pinterest:hover {
-  background-color:rgb( 149, 225, 211 )
-}
-
-.social-list-item-link-instagram {  
-  width: 56px;
-  height: 56px;   
-  background-color: rgb( 252, 227, 138 );
-  border-right: 1px solid  rgba(243, 129, 129, 0.9);
+.item-instagram {
   background-image: url(../img/icon/instagram.png);
-  background-position: center;
-  cursor: pointer;
-}
-
-.social-list-item-link-instagram:hover {
-  background-color:rgb( 149, 225, 211 )
 }
 
 .our-team-card-list-items-photo-name-personality {
